@@ -75,7 +75,8 @@ class Functions_Practice < MiniTest::Test
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
-
+    sphere_result = volume_of_sphere(3)
+    assert_equal(113.097, sphere_result.round(3))
   end
 
   #You can add your own converters
