@@ -58,3 +58,7 @@ def number_to_full_month_name(number)
     "December"
   end
 end
+
+def number_to_short_month_name(number)
+  return number_to_full_month_name(number).slice(0, 3)
+end
