@@ -81,7 +81,12 @@ class Functions_Practice < MiniTest::Test
 
   #You can add your own converters
   def test_fahrenheit_to_celsius()
-
+    freezing_result = fahrenheit_to_celsius(32)
+    boiling_result = fahrenheit_to_celsius(212)
+    room_temp_result = fahrenheit_to_celsius(68)
+    assert_equal(0, freezing_result)
+    assert_equal(100, boiling_result)
+    assert_equal(20, room_temp_result)
   end
 
 
